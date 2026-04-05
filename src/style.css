@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Microsoft JhengHei', '微軟正黑體', -apple-system, sans-serif;
+  color: #333;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Microsoft JhengHei', '微軟正黑體', sans-serif;
+  font-weight: 700;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* 主色調 */
+:root {
+  --color-primary: #C8342A;
+  --color-bg-light: #F5F5F5;
+  --color-text: #333;
+  --color-text-light: #888;
+  --navbar-height: 64px;
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "chuan-xi",
+    "name": "傳習",
+    "description": "進行田野調查、耆老訪談與、部落故事蒐集",
+    "icon": "shovel",
+    "iconUrl": "images/category1.jpg"
+  },
+  {
+    "id": "shi-zuo",
+    "name": "實作",
+    "description": "執行採土、鍊土、融機測試、成分檢測分析",
+    "icon": "hands",
+    "iconUrl": "images/category2.jpg"
+  },
+  {
+    "id": "she-ji",
+    "name": "設計",
+    "description": "傳統技法、當代設計",
+    "icon": "shelf",
+    "iconUrl": "images/category3.jpg"
+  }
+]
