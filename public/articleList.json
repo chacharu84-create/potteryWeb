@@ -1,50 +1,5 @@
 [
   {
-    "id": "article-001",
-    "categoryId": "chuan-xi",
-    "title": "部落踏查：尋訪百年製陶技藝的傳承者",
-    "content": "這次田野調查走進了台東地區的原住民部落，拜訪了幾位年逾八旬的耆老。在他們的記憶裡，製陶不只是一門手藝，更是整個部落生活文化的核心。耆老說，從前每個家庭都懂得如何用在地的土做出日常器皿，那些技術如今已逐漸式微……",
-    "date": "2026-03-19",
-    "thumbnail": "images/placeholder.jpg",
-    "htmlFile": "articles/article-001.html"
-  },
-  {
-    "id": "article-002",
-    "categoryId": "chuan-xi",
-    "title": "部落口述故事：土與火的記憶",
-    "content": "沿著山路前行，我們來到了一座保存相對完整的傳統聚落。村裡的長輩說起祖先製陶的故事，眼神中流露著難以言說的驕傲與惆悵。他們所描述的那種製陶方式，不依賴輪轆，全憑雙手捏塑，燒製時就地取材，用柴火溫柔地將土坯轉化為器……",
-    "date": "2026-03-28",
-    "thumbnail": "images/placeholder.jpg",
-    "htmlFile": "articles/article-002.html"
-  },
-  {
-    "id": "article-003",
-    "categoryId": "shi-zuo",
-    "title": "採土紀行：找到適合製陶的在地黏土",
-    "content": "帶著地質圖與採樣工具，我們深入山中尋找適合製陶的黏土礦脈。沿途採集了十多個樣本，每一種土的顏色、質地、含沙量都不盡相同。回到工作室後對這些樣本進行了初步的可塑性測試，以及燒結溫度的探索實驗，希望找出最具潛力的在地土源……",
-    "date": "2026-02-14",
-    "thumbnail": "images/placeholder.jpg",
-    "htmlFile": "articles/article-003.html"
-  },
-  {
-    "id": "article-004",
-    "categoryId": "shi-zuo",
-    "title": "鍊土與胚體製作：從原土到可用的陶土",
-    "content": "採回的原土需要經過繁複的處理流程才能使用：首先是去除雜質，接著是水洗、沉澱、脫水，最後經過長時間的陳腐讓土的可塑性更佳。本次記錄了整個鍊土流程，並測試三種不同配方混合比例的效果，其中以添加少量矽砂的配方表現最為穩定……",
-    "date": "2026-02-28",
-    "thumbnail": "images/placeholder.jpg",
-    "htmlFile": "articles/article-004.html"
-  },
-  {
-    "id": "article-005",
-    "categoryId": "she-ji",
-    "title": "當代設計與傳統紋樣的對話",
-    "content": "如何讓傳統原住民陶器的紋樣在當代設計語境中煥發新生？這是我們這個設計階段的核心命題。我們梳理了常見的幾何紋樣、象徵圖騰，也研究了現代陶藝設計師如何處理傳統與當代的張力。最終提出了一套以模組化紋理單元為基礎的設計系統……",
-    "date": "2026-01-20",
-    "thumbnail": "images/placeholder.jpg",
-    "htmlFile": "articles/article-005.html"
-  },
-  {
     "id": "article-006",
     "categoryId": "chuan-xi",
     "title": "來到kakita'an",
