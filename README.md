@@ -98,7 +98,7 @@ npm run dev
 — 部署
 
 ```bash
-git add public/articles/article-006.html public/articleList.json public/images/
+git add public/articles/ public/articleList.json public/images/
 git commit -m "feat: 新增文章"
 git push
 ```
