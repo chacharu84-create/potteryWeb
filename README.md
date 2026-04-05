@@ -87,11 +87,19 @@ git push
 | `thumbnail` | 縮圖路徑，圖片放入 `public/images/`；若無圖片可填 `images/placeholder.jpg` |
 | `htmlFile` | 對應的 HTML 檔案路徑，即 Step 1 建立的檔案 |
 
-### Step 3 — 部署
+### Step 3 — 測試
+
+```bash
+npm run build
+npm run dev
+```
+
+### Step 4 
+— 部署
 
 ```bash
 git add public/articles/article-006.html public/articleList.json public/images/
-git commit -m "feat: 新增文章 article-006"
+git commit -m "feat: 新增文章"
 git push
 ```
 
