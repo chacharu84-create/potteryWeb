@@ -34,5 +34,14 @@
   "date": "2026-05-17",
   "thumbnail": "images/article-009-cover.jpg",
   "htmlFile": "articles/article-009.html"
- }
+ },
+ {
+  "id": "article-010",
+  "categoryId": "chuan-xi",
+  "title": "土挖起來就能用嗎？",
+  "content": "小陶甕是不是非常可愛？這其實是afo ⋯⋯",
+  "date": "2026-05-05",
+  "thumbnail": "images/article-010-cover.jpg",
+  "htmlFile": "articles/article-010.html"
+}
 ]
