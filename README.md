@@ -91,10 +91,9 @@ git push
 
 ```bash
 npm run build
-npm run dev
+跑出 sihci@huangsiqideMacBook-Air potteryWeb %就可以下一步
 ```
 
-結束測試control+C才可進行下一步
 
 ### Step 4 — 部署
 
