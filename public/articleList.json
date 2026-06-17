@@ -16,5 +16,14 @@
   "date": "2026-03-05",
   "thumbnail": "images/article-007-cover.jpg",
   "htmlFile": "articles/article-007.html"
-  }
+  },
+  {
+  "id": "article-008",
+  "categoryId": "chuan-xi",
+  "title": "曾經他們這樣採土",
+  "content": "tilo大哥閱讀史料與部落耆老口述訪談的推測...",
+  "date": "2026-04-05",
+  "thumbnail": "images/article-008-thumbnail.jpg",
+  "htmlFile": "articles/article-008.html"
+ }
 ]

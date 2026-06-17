@@ -94,11 +94,12 @@ npm run build
 npm run dev
 ```
 
-### Step 4 
-— 部署
+結束測試control+C才可進行下一步
+
+### Step 4 — 部署
 
 ```bash
-git add public/articles/ public/articleList.json public/images/
+git add .
 git commit -m "feat: 新增文章"
 git push
 ```
