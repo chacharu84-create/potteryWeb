@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>曾經他們這樣採土：尋訪麗泰溪上游的製陶記憶 | 土手製陶</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Microsoft JhengHei', '微軟正黑體', sans-serif; color: #333; background: #fff; }
+    .navbar {
+      display: flex !important; align-items: center; justify-content: space-between;
+      padding: 0 2rem !important; height: 64px; border-bottom: 1px solid #e5e5e5;
+      position: sticky; top: 0; background: #fff; z-index: 100;
+    }
+    .navbar-brand { text-decoration: none; color: #333; font-size: 1.1rem; font-weight: bold; display: flex; align-items: center; gap: 8px; }
+    .navbar-brand:hover { color: #C8342A; }
+    .logo-icon { width: 32px; height: 32px; border-radius: 50%; object-fit: contain; }
+    .nav-links { display: flex; align-items: center; gap: 2rem; }
+    .nav-btn {
+      background: none; border: none; cursor: pointer;
+      font-family: 'Microsoft JhengHei', '微軟正黑體', sans-serif;
+      font-size: 0.95rem; color: #444; padding: 0; text-decoration: none;
+    }
+    .nav-btn:hover { color: #C8342A; }
+    .nav-btn.dropdown-toggle::after { vertical-align: middle; }
+    .dropdown-menu { border: 1px solid #e5e5e5 !important; border-radius: 6px !important; box-shadow: 0 8px 24px rgba(0,0,0,0.08) !important; min-width: 120px; padding: 6px 0 !important; }
+    .dropdown-item { font-family: 'Microsoft JhengHei', '微軟正黑體', sans-serif !important; font-size: 0.9rem !important; color: #444 !important; padding: 10px 20px !important; }
+    .dropdown-item:hover, .dropdown-item:focus { background: #FDF0EF !important; color: #C8342A !important; }
+    .article-container { max-width: 760px; margin: 3rem auto; padding: 0 1.5rem; }
+    .category-tag { display: inline-block; font-size: 0.8rem; color: #C8342A; border: 1px solid #C8342A; padding: 2px 10px; border-radius: 2px; margin-bottom: 1rem; }
+    .article-title { font-size: 2rem; line-height: 1.4; margin-bottom: 0.5rem; font-weight: 700; color: #222; }
+    .meta { font-size: 0.85rem; color: #888; margin-bottom: 2rem; }
+    .thumbnail { width: 100%; aspect-ratio: 16/9; border-radius: 4px; margin-bottom: 2rem; overflow: hidden; }
+    .thumbnail img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .content { font-size: 1rem; line-height: 2; color: #444; }
+    .content p { margin-bottom: 1.5rem; }
+    .back-link { display: inline-block; margin-top: 3rem; color: #C8342A; text-decoration: none; font-size: 0.9rem; }
+    .back-link:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="/potteryWeb/" class="navbar-brand">
+      <img src="/potteryWeb/images/logo.jpg" class="logo-icon" alt="土手製陶 Logo" />
+      土手製陶
+    </a>
+    <div class="nav-links">
+      <div class="dropdown">
+        <button class="nav-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          製陶紀錄
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" id="category-dropdown"></ul>
+      </div>
+      <a href="/potteryWeb/#/contact" class="nav-btn">聯絡我們</a>
+    </div>
+  </nav>
+
+  <script>
+    fetch('/potteryWeb/category.json')
+      .then(r => r.json())
+      .then(cats => {
+        const ul = document.getElementById('category-dropdown')
+        cats.forEach(cat => {
+          const li = document.createElement('li')
+          li.innerHTML = `<a class="dropdown-item" href="/potteryWeb/#/articles/${cat.id}">${cat.name}</a>`
+          ul.appendChild(li)
+        })
+      })
+      .catch(console.error)
+  </script>
+
+  <div class="article-container">
+    <span class="category-tag">田野</span>
+    <h1 class="article-title">曾經他們這樣採土</h1>
+    <p class="meta">2026年6月17日</p>
+    <div class="thumbnail">
+      <img src="../images/article-008-cover.jpg" alt="老照片按圖索驥採土" />
+    </div>
+    <div class="content">
+      <p>tilo 大哥閱讀史料與部落耆老口述訪談的推測，帶我們一路沿著麗泰（lita*）溪一路走到上游，就是看著這些老照片按圖索驥，猜測並幻想著過去採集黏土礦的情境。</p>
+      <p>從古至今，一直保留著尊重自然環境與大地的精神，到戶外採集、狩獵、捕魚等……在自然面前保持著敬畏的態度。mifetik（祭告天神）是老人家再三叮嚀且不可簡化的儀式。</p>
+      <p>tilo 大哥在部落年齡階層（selal）中為 Lafowak 階層（50-55 年次）算是我們父執輩的年紀，在他出生有記憶以來，部落就早就使用貨幣，並且金屬製的鍋具、玻璃、瓷器早已進入族人的日常生活之中，也就是說其實 tilo 大哥也跟我們一樣，再透過文獻與田野爬梳過去太巴塱部落的製陶文化。非常感謝 tilo 大哥的帶領，讓我們可以少繞一點路。這無形中也透漏出阿美族人樂意分享，並且享受集體工作與勞動的過程！</p>
+      <p>*lita'、sota、sera' 在族語中皆有土地、土、大地之意。<br>*圖片出處：中央研究院圖資。</p>
+    </div>
+    <a href="/potteryWeb/" class="back-link">← 返回首頁</a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
