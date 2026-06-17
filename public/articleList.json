@@ -23,7 +23,16 @@
   "title": "曾經他們這樣採土",
   "content": "tilo大哥閱讀史料與部落耆老口述訪談的推測...",
   "date": "2026-04-05",
-  "thumbnail": "images/article-008-thumbnail.jpg",
+  "thumbnail": "images/article-008-cover.jpg",
   "htmlFile": "articles/article-008.html"
+ },
+ {
+  "id": "article-009",
+  "categoryId": "chuan-xi",
+  "title": "採集地",
+  "content": "關於黏土的採集地，部落長者們的經驗與習慣都有所不同，在我們這次田野調查中，就至少記錄了五個不同的黏土採集點。",
+  "date": "2026-05-17",
+  "thumbnail": "images/article-009-cover.jpg",
+  "htmlFile": "articles/article-009.html"
  }
 ]
