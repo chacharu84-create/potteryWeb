@@ -30,7 +30,7 @@
   "id": "article-009",
   "categoryId": "chuan-xi",
   "title": "採集地",
-  "content": "關於黏土的採集地，部落長者們的經驗與習慣都有所不同，在我們這次田野調查中，就至少記錄了五個不同的黏土採集點。",
+  "content": "關於黏土的採集地，部落長者們的經驗...",
   "date": "2026-05-17",
   "thumbnail": "images/article-009-cover.jpg",
   "htmlFile": "articles/article-009.html"
@@ -39,9 +39,18 @@
   "id": "article-010",
   "categoryId": "chuan-xi",
   "title": "土挖起來就能用嗎？",
-  "content": "小陶甕是不是非常可愛？這其實是afo ⋯⋯",
+  "content": "小陶甕是不是非常可愛？這其實是afo...",
   "date": "2026-05-05",
   "thumbnail": "images/article-010-cover.jpg",
   "htmlFile": "articles/article-010.html"
-}
+ },
+ {
+  "id": "article-011",
+  "categoryId": "chuan-xi",
+  "title": "泥漿釉請益",
+  "content": "關於本團隊在嘗試的主要材料為以下兩...",
+  "date": "2026-05-06",
+  "thumbnail": "images/article-011-cover.jpg",
+  "htmlFile": "articles/article-011.html"
+ }
 ]
