@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>為窯搭個房子：雨落光復前的協力抗雨與搭篷實錄 | 土手製陶</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Microsoft JhengHei', '微軟正黑體', sans-serif; color: #333; background: #fff; }
+    .navbar {
+      display: flex !important; align-items: center; justify-content: space-between;
+      padding: 0 2rem !important; height: 64px; border-bottom: 1px solid #e5e5e5;
+      position: sticky; top: 0; background: #fff; z-index: 100;
+    }
+    .navbar-brand { text-decoration: none; color: #333; font-size: 1.1rem; font-weight: bold; display: flex; align-items: center; gap: 8px; }
+    .navbar-brand:hover { color: #C8342A; }
+    .logo-icon { width: 32px; height: 32px; border-radius: 50%; object-fit: contain; }
+    .nav-links { display: flex; align-items: center; gap: 2rem; }
+    .nav-btn {
+      background: none; border: none; cursor: pointer;
+      font-family: 'Microsoft JhengHei', '微軟正黑體', sans-serif;
+      font-size: 0.95rem; color: #444; padding: 0; text-decoration: none;
+    }
+    .nav-btn:hover { color: #C8342A; }
+    .nav-btn.dropdown-toggle::after { vertical-align: middle; }
+    .dropdown-menu { border: 1px solid #e5e5e5 !important; border-radius: 6px !important; box-shadow: 0 8px 24px rgba(0,0,0,0.08) !important; min-width: 120px; padding: 6px 0 !important; }
+    .dropdown-item { font-family: 'Microsoft JhengHei', '微軟正黑體', sans-serif !important; font-size: 0.9rem !important; color: #444 !important; padding: 10px 20px !important; }
+    .dropdown-item:hover, .dropdown-item:focus { background: #FDF0EF !important; color: #C8342A !important; }
+    .article-container { max-width: 760px; margin: 3rem auto; padding: 0 1.5rem; }
+    .category-tag { display: inline-block; font-size: 0.8rem; color: #C8342A; border: 1px solid #C8342A; padding: 2px 10px; border-radius: 2px; margin-bottom: 1rem; }
+    .article-title { font-size: 2rem; line-height: 1.4; margin-bottom: 0.5rem; font-weight: 700; color: #222; }
+    .meta { font-size: 0.85rem; color: #888; margin-bottom: 2rem; }
+    .thumbnail { width: 100%; aspect-ratio: 16/9; border-radius: 4px; margin-bottom: 2rem; overflow: hidden; }
+    .thumbnail img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .content { font-size: 1rem; line-height: 2; color: #444; }
+    .content p { margin-bottom: 1.5rem; }
+    .content img { width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 4px; margin: 1.5rem 0; display: block; }
+    .back-link { display: inline-block; margin-top: 3rem; color: #C8342A; text-decoration: none; font-size: 0.9rem; }
+    .back-link:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="/potteryWeb/" class="navbar-brand">
+      <img src="/potteryWeb/images/logo.jpg" class="logo-icon" alt="土手製陶 Logo" />
+      土手製陶
+    </a>
+    <div class="nav-links">
+      <div class="dropdown">
+        <button class="nav-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          製陶紀錄
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" id="category-dropdown"></ul>
+      </div>
+      <a href="/potteryWeb/#/contact" class="nav-btn">聯絡我們</a>
+    </div>
+  </nav>
+
+  <script>
+    fetch('/potteryWeb/category.json')
+      .then(r => r.json())
+      .then(cats => {
+        const ul = document.getElementById('category-dropdown')
+        cats.forEach(cat => {
+          const li = document.createElement('li')
+          li.innerHTML = `<a class="dropdown-item" href="/potteryWeb/#/articles/${cat.id}">${cat.name}</a>`
+          ul.appendChild(li)
+        })
+      })
+      .catch(console.error)
+  </script>
+
+  <div class="article-container">
+    <span class="category-tag">傳習</span>
+    <h1 class="article-title">為窯搭個房子</h1>
+    <p class="meta">2026年05月05日</p>
+    <div class="thumbnail">
+      <img src="../images/article-013-cover.jpg" alt="點燃太巴塱阿美陶的戶外露天燒之火" />
+    </div>
+    <div class="content">
+      <p>就在5/15，我們點燃了太巴塱阿美陶的戶外露天燒之火。當天上午，天氣尚可稱得上晴朗。這次燒製帶來了我們前幾週向 tilo 大哥及 afo ina 學習所捏製的陶器。使用的黏土皆是從麗泰溪沿岸採集而來。源自於海岸山脈所流經太巴塱部落的麗泰溪，蘊含黏性極佳的土壤，非常適合製作陶器，並且我們也在光復的土地上燒製，非常感謝紅瓦屋的場地與 fotol 過去製作的石灶。</p>
+      
+      <p>接近中午，雲層越來越厚。本來還擔心我們撿的漂流木不夠，正討論著從哪裡可以再取得木材的同時，ina 們說著：「我們要先把帆布搭起來！」也無暇煩惱漂流木的問題了。大家分工協助將天篷完成，在雨落下之前。中午過後的大雨，幾乎沒停過的下在光復鄉，直至夜晚。</p>
+      
+      <!-- 內文第二張插圖 -->
+      <img src="../images/article-013-cover02.jpg" alt="眾人協力撐開大張帆布抗雨搭窯" />
+      
+      <p>我們趕緊再找一張更大的帆布來。好像在巡水田一樣的阿公經過，看見像小雞一樣慌亂的我們，一面說著笑話一面拿起手鋸。阿公說：『我下禮拜要去日本囉，你們要好好學喔！』在直徑約10公分粗的竹子上緣兩側鋸出缺口，原來竹子的缺口，是用來穿越帆布制高點的棉繩啊！大家協力將更大張的帆布撐開，四個端點綁在樹上，穿越帆布中心制高點的棉繩綁在更高的位置。</p>
+      <p>哇！不管下多大的雨，都不用擔心會被淋濕了。在這塊帆布底下，就是我們這幾天和窯一起住的房子。</p>
+    </div>
+    <a href="/potteryWeb/" class="back-link">← 返回首頁</a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
