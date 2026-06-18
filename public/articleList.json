@@ -52,5 +52,14 @@
   "date": "2026-05-06",
   "thumbnail": "images/article-011-cover.jpg",
   "htmlFile": "articles/article-011.html"
+ },
+ {
+  "id": "article-012",
+  "categoryId": "chuan-xi",
+  "title": "注重儀式感的族群",
+  "content": "四、五月的花蓮光復，上午總是悶熱得一...",
+  "date": "2026-05-14",
+  "thumbnail": "images/article-012-cover.jpg",
+  "htmlFile": "articles/article-012.html"
  }
 ]
