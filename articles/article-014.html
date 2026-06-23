@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>採土製釉實驗手冊：太巴塱部落採土製陶計畫成果分享 | 土手製陶</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Microsoft JhengHei', '微軟正黑體', sans-serif; color: #333; background: #fff; }
+    .navbar {
+      display: flex !important; align-items: center; justify-content: space-between;
+      padding: 0 2rem !important; height: 64px; border-bottom: 1px solid #e5e5e5;
+      position: sticky; top: 0; background: #fff; z-index: 100;
+    }
+    .navbar-brand { text-decoration: none; color: #333; font-size: 1.1rem; font-weight: bold; display: flex; align-items: center; gap: 8px; }
+    .navbar-brand:hover { color: #C8342A; }
+    .logo-icon { width: 32px; height: 32px; border-radius: 50%; object-fit: contain; }
+    .nav-links { display: flex; align-items: center; gap: 2rem; }
+    .nav-btn {
+      background: none; border: none; cursor: pointer;
+      font-family: 'Microsoft JhengHei', '微軟正黑體', sans-serif;
+      font-size: 0.95rem; color: #444; padding: 0; text-decoration: none;
+    }
+    .nav-btn:hover { color: #C8342A; }
+    .nav-btn.dropdown-toggle::after { vertical-align: middle; }
+    .dropdown-menu { border: 1px solid #e5e5e5 !important; border-radius: 6px !important; box-shadow: 0 8px 24px rgba(0,0,0,0.08) !important; min-width: 120px; padding: 6px 0 !important; }
+    .dropdown-item { font-family: 'Microsoft JhengHei', '微軟正黑體', sans-serif !important; font-size: 0.9rem !important; color: #444 !important; padding: 10px 20px !important; }
+    .dropdown-item:hover, .dropdown-item:focus { background: #FDF0EF !important; color: #C8342A !important; }
+    .article-container { max-width: 760px; margin: 3rem auto; padding: 0 1.5rem; }
+    .category-tag { display: inline-block; font-size: 0.8rem; color: #C8342A; border: 1px solid #C8342A; padding: 2px 10px; border-radius: 2px; margin-bottom: 1rem; }
+    .article-title { font-size: 2rem; line-height: 1.4; margin-bottom: 0.5rem; font-weight: 700; color: #222; }
+    .meta { font-size: 0.85rem; color: #888; margin-bottom: 2rem; }
+    .thumbnail { width: 100%; aspect-ratio: 16/9; border-radius: 4px; margin-bottom: 2rem; overflow: hidden; }
+    .thumbnail img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .content { font-size: 1rem; line-height: 2; color: #444; }
+    .content p { margin-bottom: 1.5rem; }
+    .download-link { display: inline-block; background-color: #C8342A; color: #fff; padding: 10px 20px; border-radius: 4px; text-decoration: none; font-weight: bold; margin: 1rem 0; }
+    .download-link:hover { background-color: #A62B22; color: #fff; }
+    .back-link { display: inline-block; margin-top: 3rem; color: #C8342A; text-decoration: none; font-size: 0.9rem; }
+    .back-link:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="/potteryWeb/" class="navbar-brand">
+      <img src="/potteryWeb/images/logo.jpg" class="logo-icon" alt="土手製陶 Logo" />
+      土手製陶
+    </a>
+    <div class="nav-links">
+      <div class="dropdown">
+        <button class="nav-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          製陶紀錄
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" id="category-dropdown"></ul>
+      </div>
+      <a href="/potteryWeb/#/contact" class="nav-btn">聯絡我們</a>
+    </div>
+  </nav>
+
+  <script>
+    fetch('/potteryWeb/category.json')
+      .then(r => r.json())
+      .then(cats => {
+        const ul = document.getElementById('category-dropdown')
+        cats.forEach(cat => {
+          const li = document.createElement('li')
+          li.innerHTML = `<a class="dropdown-item" href="/potteryWeb/#/articles/${cat.id}">${cat.name}</a>`
+          ul.appendChild(li)
+        })
+      })
+      .catch(console.error)
+  </script>
+
+  <div class="article-container">
+    <span class="category-tag">傳習</span>
+    <h1 class="article-title">採土製釉實驗手冊</h1>
+    <p class="meta">2026年05月05日</p>
+    <div class="thumbnail">
+      <img src="../images/article-014-cover.jpg" alt="採土製釉實驗手冊封面" />
+    </div>
+    <div class="content">
+      <p>本團隊由工藝中心，工藝新趣計劃所補助，在2026年2月到6月期間，執行了「土手製陶-太巴塱部落採土製陶計畫」[cite: 9]。</p>
+      <p>這段時間我們除了學習阿美陶的採土、製陶、坑燒技藝，也將採到的土進行調製泥漿釉的實驗[cite: 9]。</p>
+      <p>下方檔案是我們取實驗紀錄部分製成的電子手冊，歡迎下載觀看[cite: 9]。</p>
+      
+      <!-- 下載連結 -->
+      <a href="documents/sample.pdf" class="download-link">View PDF Document</a>[cite: 9]
+    </div>
+    <a href="/potteryWeb/" class="back-link">← 返回首頁</a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

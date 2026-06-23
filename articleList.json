@@ -70,5 +70,14 @@
   "date": "2026-05-20",
   "thumbnail": "images/article-013-cover.jpg",
   "htmlFile": "articles/article-013.html"
+ },
+ {
+  "id": "article-014",
+  "categoryId": "chuan-xi",
+  "title": "採土製釉實驗手冊",
+  "content": "本團隊由工藝中心，工藝新趣...",
+  "date": "2026-06-23",
+  "thumbnail": "images/article-014-cover.jpg",
+  "htmlFile": "articles/article-014.html"
  }
 ]
